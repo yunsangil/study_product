@@ -14,7 +14,12 @@
                 var Hours = date.getHours();
                 var Minute = date.getMinutes();
                 var Seconds = date.getSeconds();
-
+                if(parseInt(Seconds) < 10){
+                  Seconds = '0'+Seconds;
+                }
+                if(parseInt(Minute) < 10){
+                    Minute = '0'+ Minute;
+                }
                 if(Hours >= 12){
                     noon = 'PM';
                 }
