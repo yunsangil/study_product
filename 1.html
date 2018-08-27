@@ -14,6 +14,12 @@
                 var Hours = date.getHours();
                 var Minute = date.getMinutes();
                 var Seconds = date.getSeconds();
+								if(parseInt(Hours) < 10){
+									Hours = '0'+Hours;
+								}
+								if(parseInt(Minute) < 10){
+									Minute = '0'+Minute;
+								}
                 if(parseInt(Seconds) < 10){
                   Seconds = '0'+Seconds;
                 }
